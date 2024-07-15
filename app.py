@@ -35,3 +35,16 @@ map_data = pd.DataFrame(
     np.random.randn(100, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 st.map(map_data)
+import seaborn as sns
+import matplotlib.pyplot as plt
+tips = sns.load_dataset
+
+plt.rcParams['font.family'] = 'Malgun Gothic'
+fig, ax = plt.subplots(2, 2, figsize=(14, 10))
+#
+
+
+
+plt.tight_layout()
+plt.savefig('yourname.png', dpi=300)
+plt.show()
